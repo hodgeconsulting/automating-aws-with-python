@@ -1,6 +1,6 @@
-# automating-aws-with-python
+# Automating AWS with Python
 
-Repository for the A Cloud Guru course *Automating AWS with Python course*
+Repository for the A Cloud Guru course *Automating AWS with Python*
 
 ## 01-webotron
 
@@ -14,3 +14,5 @@ Webotron currently has the following features:
 - List contents of a bucket
 - Create and set up bucket
 - Sync directory tree to bucket
+- Set AWS profile with --profile=<profile_name>
+- Configure Route53 Domain
