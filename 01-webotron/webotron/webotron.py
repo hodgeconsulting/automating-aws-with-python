@@ -1,8 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-"""
-Webotron: Deploy websites with aws.
+"""Webotron: Deploy websites with aws.
 
 Webotron automates the process of deploying static web sites to AWS.
 - Configure AWS S3 buckets
@@ -31,10 +30,8 @@ dist_manager = None
 
 
 @click.group()
-@click.option(
-    '--profile', default=None,
-    help="Use a given AWS profile"
-)
+@click.option('--profile', default=None,
+              help="Use a given AWS profile")
 def cli(profile):
     """Webotron deploys websites to AWS."""
     global session, bucket_manager, domain_manager, cert_manager, dist_manager
@@ -98,9 +95,11 @@ def setup_domain(domain):
     domain_manager.create_s3_domain_record(zone, domain, endpoint)
     print("Domain configured: http://{}".format(domain))
 
+
 @cli.command('find-cert')
 @click.argument('domain')
 def find_cert(domain):
+    """Find a certificate for <DOMAIN>."""
     print(cert_manager.find_matching_cert(domain))
 
 
@@ -108,15 +107,16 @@ def find_cert(domain):
 @click.argument('domain')
 @click.argument('bucket')
 def setup_cdn(domain, bucket):
+    """Set up CloudFront CDN for DOMAIN pointing to BUCKET"""
     dist = dist_manager.find_matching_dist(domain)
 
     if not dist:
         cert = cert_manager.find_matching_cert(domain)
-        if not cert: #SSL is not optional at this time.
+        if not cert:  # SSL is not optional at this time
             print("Error: No matching cert found.")
             return
 
-        dist = dist_manager.creat_dist(domain, cert)
+        dist = dist_manager.create_dist(domain, cert)
         print("Waiting for distribution deployment...")
         dist_manager.await_deploy(dist)
 
