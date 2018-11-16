@@ -6,9 +6,9 @@ setup(
     author='Paul Hodge',
     author_email='frpaulh@gmail.com',
     description='webotron 80 is a tool to deploy static websites to AWS.',
-    license='GPLv3+'
+    license='GPLv3+',
     packages=['webotron'],
-    url='https://github.com/hodgeconsulting/automating-aws-with-python/tree/master/01-webotron/webotron'
+    url='https://github.com/hodgeconsulting/automating-aws-with-python/tree/master/01-webotron/webotron',
     install_requires=[
         'click',
         'boto3'
