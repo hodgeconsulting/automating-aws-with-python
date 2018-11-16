@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-""""Classes for Cloud Front Distributions."""
+"""Classes for Cloud Front Distributions."""
 
 import uuid
 

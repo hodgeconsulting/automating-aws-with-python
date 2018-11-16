@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d52d074fc3b3e107d17bc0a9dc25413632a1ba242f585b310255496b72d23c84"
+            "sha256": "f9c29256c9e7b26e278bb15abf8fe64d4aaa7a8c0b1e5d5287ca9a90fe5192cb"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -18,18 +18,18 @@
     "default": {
         "boto3": {
             "hashes": [
-                "sha256:a85661cb70d10be34e57c56d3958485888893e2987f083c49a48a169042e9c56",
-                "sha256:d71b276f5c5d48f429292d076099a6c4fbcc9015a158ac86cc5d36b16d5f0043"
+                "sha256:477d2837ae31269c9a8994d449f61cac26d0669b080504898240600afe044cc5",
+                "sha256:c6b016e59819a276ce0000477025bd2142776bcd573ae315194eb7bc1e13b711"
             ],
             "index": "pypi",
-            "version": "==1.9.35"
+            "version": "==1.9.46"
         },
         "botocore": {
             "hashes": [
-                "sha256:1a1d528ed30afc9d6364855e6f701862d6cc8ba5231b422c8c83ff8ab4e8a832",
-                "sha256:a5c93a7182b7f0c447014c15b1df6ac840677e9258f8505ecedff9b66a539a51"
+                "sha256:aabce87b8f01745712ac4b0504ce8dc119d39e67ffc05ab2ef05b417e3ca0de5",
+                "sha256:cb518da8f2d6c5a4f499261e8ab52e149c016b805bca8c104b38dda106d27ff5"
             ],
-            "version": "==1.12.35"
+            "version": "==1.12.46"
         },
         "click": {
             "hashes": [
@@ -78,11 +78,11 @@
         },
         "urllib3": {
             "hashes": [
-                "sha256:41c3db2fc01e5b907288010dec72f9d0a74e37d6994e6eb56849f59fea2265ae",
-                "sha256:8819bba37a02d143296a4d032373c4dd4aca11f6d4c9973335ca75f9c8475f59"
+                "sha256:61bf29cada3fc2fbefad4fdf059ea4bd1b4a86d2b6d15e1c7c0b582b9752fe39",
+                "sha256:de9529817c93f27c8ccbfead6985011db27bd0ddfcdb2d86f3f663385c6a9c22"
             ],
             "markers": "python_version >= '3.4'",
-            "version": "==1.24"
+            "version": "==1.24.1"
         }
     },
     "develop": {
@@ -136,6 +136,7 @@
                 "sha256:b9c40e9750f3d77e6e4d441d8b0266cf555e7cdabdcff33c4fd06366ca761ef8",
                 "sha256:ec9ef8f4a9bc6f71eec99e1806bfa2de401650d996c59330782b89a5555c1497"
             ],
+            "markers": "python_version >= '2.7' and python_version != '3.1.*' and python_version != '3.2.*' and python_version != '3.0.*' and python_version != '3.3.*'",
             "version": "==4.3.4"
         },
         "jedi": {

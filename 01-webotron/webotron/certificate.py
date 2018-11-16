@@ -25,6 +25,7 @@ class CertificateManager:
         return False
 
     def find_matching_cert(self, domain_name):
+        """Find matching cert."""
         paginator = self.client.get_paginator('list_certificates')
         for page in paginator.paginate(CertificateStatuses=['ISSUED']):
             for cert in page['CertificateSummaryList']:
